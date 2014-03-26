@@ -19,6 +19,8 @@ end
 group :development do
   gem 'binding_of_caller'
   gem 'better_errors'
+  gem 'capybara'
+  gem 'guard-rspec', require: false
 end
 
 group :test do
@@ -34,7 +36,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
