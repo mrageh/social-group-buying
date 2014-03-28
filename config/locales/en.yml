@@ -20,10 +20,26 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  current_user: "%{name}" 
   button:
     user:
       create:
         'Create an account'
+    sign_in:
+      'Sign in'
+    sign_out:
+      'Sign out'
+  header:
+    sign_in:
+      'Sign in'
+    sign_up:
+      'Sign up'
   flashes:
     success_after_create:
       'Account successfully created'
+    successfully_signed_in:
+      'Welcome'
+    successfully_signed_out:
+      'Signed out!'
+    invalid_sign_in_details:
+      'Invalid Password or Email'

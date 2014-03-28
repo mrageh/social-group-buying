@@ -1,0 +1,17 @@
+<%= form_for(@session) do |f| %>
+  <fieldset>
+    <ol>
+      <li>
+        <%= label(:session, :email) %>
+        <%= f.text_field :email %>
+      </li>
+      <li>
+        <%= label(:session, :password) %>
+        <%= f.password_field :password %>
+      </li>
+    </ol>
+    <p>
+      <%= f.submit t('button.sign_in') %>
+    </p>
+  </fieldset>
+<% end %>

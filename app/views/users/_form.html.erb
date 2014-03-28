@@ -3,19 +3,19 @@
   <fieldset>
     <ol>
       <li class="required">
-        <%= f.label :name %>
+        <%= label(:user, :name) %>
         <%= f.text_field :name, autofocus: true %>
       </li>
       <li class="required">
-        <%= f.label :email %>
+        <%= label(:user, :email) %>
         <%= f.text_field :email %>
       </li>
       <li class="required">
-        <%= f.label :password %>
+        <%= label(:user, :password) %>
         <%= f.password_field :password %>
       </li>
       <li class="required">
-        <%= f.label :password_confirmation %>
+        <%= label(:user, :password_confirmation) %>
         <%= f.password_field :password_confirmation %>
       </li>
     </ol>
