@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'User signs out' do
   scenario 'after signing in' do
-    create_user(
+    user = create_user(
       name: 'Adam',
       email: 'test@example.com',
       password: 'secret',
@@ -13,6 +13,6 @@ feature 'User signs out' do
     click_on I18n.t('button.sign_out')
 
     expect(page).to have_text I18n.t('flashes.successfully_signed_out')
-    expect(page).not_to have_text 'Signed in as: Adam'
+    expect(page).not_to have_text I18n.t('signed_in_as', name: user.name)
   end
 end

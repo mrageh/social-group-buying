@@ -1,5 +1,5 @@
 <% if current_user %>
-  Signed in as: <%= t('current_user', name: current_user.name) %>
+  <%= t('signed_in_as', name: current_user.name) %>
   <%= button_to t('button.sign_out'),
     sign_out_path,
     method: :delete %>
